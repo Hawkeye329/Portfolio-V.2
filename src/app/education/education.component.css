@@ -1,0 +1,172 @@
+/* Global styles */
+h1,
+h2 {
+  text-align: center;
+}
+
+.home-page {
+  text-align: center;
+}
+
+div,
+tr {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Table styles */
+table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto; /* Center the table */
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternate row background color */
+}
+
+/* Education section styles */
+.education-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.education-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.education-container:hover {
+  transform: translateY(-5px);
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.education-image-container {
+  flex: 0 0 200px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.education-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.education-details {
+  flex: 1;
+}
+
+.education-details h3 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+  font-size: 1.25rem;
+}
+
+.education-details p {
+  margin: 0.25rem 0;
+  color: #666;
+}
+
+.education-details .year {
+  font-style: italic;
+  color: #3498db;
+}
+
+.education-details .degree,
+.education-details .stream,
+.education-details .level {
+  font-weight: 500;
+}
+
+/* Intermediate College and High School */
+.intermediate-college-item,
+.high-school-item {
+  margin-bottom: 20px; /* Add spacing between education items */
+  display: flex; /* Use flexbox to align items */
+}
+
+.intermediate-college-item h3,
+.high-school-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px; /* Adjust spacing between institution name and date */
+}
+
+.intermediate-college-item p,
+.high-school-item p {
+  margin: 0; /* Remove default margins */
+}
+
+.high-school-logo {
+  margin-right: 20px;
+  margin-bottom: 40px; /* Add bottom margin to create gap between logo and footer */
+  width: 300px; /* Adjust image width as needed */
+  height: 105px; /* Adjust image height as needed */
+}
+
+/* New styles */
+@media only screen and (max-width: 600px) {
+  table {
+    width: 100%; /* Adjust table width for smaller screens */
+  }
+
+  .education-item,
+  .intermediate-college-item,
+  .high-school-item {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .education-image,
+  .high-school-logo {
+    margin-right: 0; /* Remove right margin for images on smaller screens */
+    height: 105px;
+    margin-bottom: 10px; /* Add bottom margin for images on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .education-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .education-image-container {
+    width: 150px;
+    margin: 0 auto 1rem;
+  }
+}
+
+/* Footer styles */
+footer {
+  margin-top: 40px; /* Add top margin to create gap between content and footer */
+  padding-top: 20px; /* Add padding to ensure content doesn't touch the top */
+}

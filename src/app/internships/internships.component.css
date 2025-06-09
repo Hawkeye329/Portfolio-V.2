@@ -1,0 +1,31 @@
+.internship-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+  }
+  
+  .internship-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .internship-details {
+    flex-grow: 1;
+    padding-right: 20px;
+  }
+  
+  .logo {
+    flex-shrink: 0;
+  }
+  
+  .logo img {
+    max-width: 150px; /* Adjust the size as needed */
+    height: auto;
+  }
+  
