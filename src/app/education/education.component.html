@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education</title>
+    <!-- You can link your CSS file here if you have one -->
+    <style>
+      /* Add CSS styles here */
+      .education-container {
+        margin-bottom: 20px;
+        display: flex; /* Use flexbox to align items */
+        align-items: center; /* Center items vertically */
+      }
+
+      .education-image {
+        margin-right: 20px;
+        width: 300px; /* Adjust image width as needed */
+        height: auto;
+      }
+
+      .education-details {
+        flex: 1; /* Take up remaining space */
+      }
+
+      .education-item {
+        margin-top: 20px; /* Add spacing between education items */
+      }
+
+
+      /* Animation styles (example) */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .education-container {
+        animation: fadeIn 0.5s ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="education-section">
+      <h1>Education</h1>
+      
+      <!-- University Education -->
+      <div class="education-container" [@educationAnimation]>
+        <div class="education-item">
+          <div class="education-image-container">
+            <img [src]="education.university.image" 
+                 [alt]="education.university.name + ' Logo'"
+                 class="education-image">
+          </div>
+          <div class="education-details">
+            <h3>{{ education.university.name }}</h3>
+            <p class="year">{{ education.university.year }}</p>
+            <p class="degree">{{ education.university.degree }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- College Education -->
+      <div class="education-container" [@educationAnimation]>
+        <div class="education-item">
+          <div class="education-image-container">
+            <img [src]="education.college.image" 
+                 [alt]="education.college.name + ' Logo'"
+                 class="education-image">
+          </div>
+          <div class="education-details">
+            <h3>{{ education.college.name }}</h3>
+            <p class="year">{{ education.college.year }}</p>
+            <p class="stream">{{ education.college.stream }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- School Education -->
+      <div class="education-container" [@educationAnimation]>
+        <div class="education-item">
+          <div class="education-image-container">
+            <img [src]="education.school.image" 
+                 [alt]="education.school.name + ' Logo'"
+                 class="education-image">
+          </div>
+          <div class="education-details">
+            <h3>{{ education.school.name }}</h3>
+            <p class="year">{{ education.school.year }}</p>
+            <p class="level">{{ education.school.level }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

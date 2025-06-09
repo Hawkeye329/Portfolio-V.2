@@ -1,0 +1,10 @@
+<div class="awards-container">
+    <h1>Awards</h1>
+    <div class="award-item" *ngFor="let award of awards" [@awardAnimation]>
+      <h2>{{ award.title }}</h2>
+      <ul>
+        <li *ngFor="let detail of award.details">{{ detail }}</li>
+      </ul>
+    </div>
+  </div>
+  
